@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>De Ninja a Gato</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            alert("arma el puzzle");
+            $(".nuno").click(function() {
+                $(".nuno, .uno").slideToggle();
+            });
+            $(".ndos").click(function() {
+                $(".ndos, .dos").slideToggle();
+            });
+            $(".ntres").click(function() {
+                $(".ntres, .tres").slideToggle();
+            });
+            $(".ncuatro").click(function() {
+                $(".ncuatro, .cuatro").slideToggle();
+            });
+            $(".ncinco").click(function() {
+                $(".ncinco, .cinco").slideToggle();
+            });
+            $(".uno").click(function() {
+                $(".uno, .nuno").slideToggle();
+            });
+            $(".dos").click(function() {
+                $(".dos, .ndos").slideToggle();
+            });
+            $(".tres").click(function() {
+                $(".tres, .ntres").slideToggle();
+            });
+            $(".cuatro").click(function() {
+                $(".cuatro, .ncuatro").slideToggle();
+            });
+            $(".cinco").click(function() {
+                $(".cinco, .ncinco").slideToggle();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="gato">
+            <img hidden class="uno" src="img/cat 0.png" data-alt-src="gato1">
+            <img hidden class="dos" src="img/cat1.png" data-alt-src="gato2">
+            <img hidden class="tres" src="img/cat2.png" data-alt-src="gato3">
+            <img hidden class="cuatro" src="img/cat3.png" data-alt-src="gato4">
+            <img hidden class="cinco" src="img/cat4.png" data-alt-src="gato5">
+        </div>
+        <div class="ninja">
+            <img class="nuno" src="img/ninja0.png" data-alt-src="ninja1">
+            <img class="ndos" src="img/ninja1.png" data-alt-src="ninja2">
+            <img class="ntres" src="img/ninja2.png" data-alt-src="ninja3">
+            <img class="ncuatro" src="img/ninja3.png" data-alt-src="ninja4">
+            <img class="ncinco" src="img/ninja4.png" data-alt-src="ninja5">
+        </div>
+    </div>
+</body>
+
+</html>
